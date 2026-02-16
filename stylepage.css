@@ -1,0 +1,198 @@
+/* color palette-
+Dusk Blue: #3D5A80 
+Powder Blue: #98C1D9
+Light Coral: #EE6C4D
+Light Steel Blue: #E0FBFC
+Slate Gray: #293241
+-----------------------------------------------------*/
+
+/* Global Styles
+--------------------------*/
+
+html {
+  box-sizing: border-box;
+  scroll-padding-top: 120px; /* adjust to your header height */
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+     font-family: "Roboto", sans-serif;
+     margin: 0;
+     background: #fff;
+}
+h1, h2 {
+    font-family: "Playwrite NZ Basic", cursive;
+    font-weight: 400;
+}
+h1 {
+    font-size: 80px;
+    font-family: "Playwrite NZ Basic", cursive;
+}
+h2 {
+    font-size: 40px;
+    margin-top: 0;
+}
+h3 {
+    font-family: "Playwrite NZ Basic", cursive;
+    font-size: 30px;
+}
+h4 {
+    font-family: "Playwrite NZ Basic", cursive;
+    font-size: 20px;
+    margin-left: 1rem;
+}
+a{
+    color: #EE6C4D;
+    position: relative;
+    top:0%;
+    border: 2px solid #EE6C4D;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: auto;
+}
+p {
+    line-height: 1.15;
+    margin-bottom: 0.25rem;
+}
+/* Accessibility */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  padding: 0.75rem 1rem;
+  background: white;
+  border: 2px solid black;
+}
+.skip-link:focus { left: 1rem; top: 1rem; }
+
+/* Header and Footer
+--------------------------*/
+header, footer {
+    background: #293241;
+    color: #E0FBFC;
+    padding: 0.25rem;
+}
+.welcome {
+    background: #3D5A80;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid #293241;
+    margin: 1rem 0;
+    font-family: "Playwrite NZ Basic", cursive;
+}
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #ddd;
+  background: #293241;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.nav-link {
+  text-decoration: none;
+  padding: 0.35rem 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  color: #E0FBFC;
+}
+
+.nav-link[aria-current="page"] {
+  text-decoration: none;
+  padding: 0.35rem 0.6rem;
+  border: 1px solid #EE6C4D;
+  border-radius: 0.5rem;
+  color: #EE6C4D;
+}
+/*guide navigation*/
+.page-nav {
+  padding: 1.5rem 0;
+  margin-bottom: 2rem;
+}
+
+/* Sections / cards */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  background: #fff;
+  margin-bottom: 1rem;
+  scroll-margin-top: 120px;
+}
+.card-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.container {
+  width: min(1400px, 96%);
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.hero-profile {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Images */
+.image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 1rem;
+  margin: 0 auto 1rem auto;
+  display: block;
+}
+.image-about {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 1rem;
+  margin: 0 auto 1rem auto;
+  display: block;
+}
+.image-hero {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 1rem;
+  margin: 1rem auto;
+  display: block;
+}
+.caption { 
+  margin-top: 0.5rem; color: #444; font-size: 0.95rem; 
+  text-align: center;
+}
+/* resource links*/
+.resource-list {
+  padding-left: 1.2rem;
+}
+.resource-list a {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.tech-hero-links {
+  padding-left: 1.2rem;
+}
+.tech-hero-links a {
+  display: block;
+  margin-bottom: 0.5rem;
+}
